@@ -9,9 +9,6 @@ function mostrar()
 
 	
 	
-	
-	
-	
 	var nombre;
 	var edad;
 	var apellido;
