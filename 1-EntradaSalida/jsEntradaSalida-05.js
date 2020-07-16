@@ -12,9 +12,7 @@ function mostrar()
 
     //alert("Usted se llama jose y  tiene 66 años");
     alert("Usted se llama " + nombre + " y tiene " + edad + " años ")
-
-
-
+    
 
 
 

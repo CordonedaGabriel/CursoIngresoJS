@@ -14,7 +14,6 @@ function mostrarAumento()
 	resultado = sueldo + aumento;
 	txtIdResultado.value  = resultado;
 	
-	 
 
 
 
