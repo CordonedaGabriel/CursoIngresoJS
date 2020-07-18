@@ -10,12 +10,14 @@ function Rectangulo ()
     var ancho;
     var cantidadAlambre;
     var perimetro;
+    
     largo = txtIdLargo.value;
     ancho = txtIdAncho.value;
 
-    largo = parseInt(largo);
-    ancho = parseInt(ancho);
+    largo = parseFloat(largo);
+    ancho = parseFloat(ancho);
 
+    
     perimetro = largo * 2 + ancho * 2;
 
     cantidadAlambre = perimetro * 3;
@@ -28,11 +30,21 @@ function Rectangulo ()
 }
 function Circulo () 
 {
-    var radio
-    var perimetro
-    var totalAlambre
+    var radio;
+    var perimetro;
+    var totalAlambre;
 
-    radio  
+    radio = txtIdRadio.value;
+
+    radio = parseFloat(radio);
+
+    perimetro = 2 * radio * Math.PI ;
+    perimetro = Math.ceil(perimetro);
+    totalAlambre  = perimetro * 3;
+ 
+
+    alert("la cantidad total de alambre que se necesita es " + totalAlambre + " metros");
+
 
 
 
@@ -48,6 +60,9 @@ function Materiales ()
     var bolsaDeCal
     var area
 
+    largo = txtIdLargo.value;
+    ancho = txtIdAncho.value;
+
     largo = parseInt(largo);
     ancho = parseInt(ancho);
 
@@ -56,7 +71,8 @@ function Materiales ()
     bolsaCemento = 2 * area
     bolsaDeCal = 3 * area
 
-    alert("se necesitan: " + bolsaCemento + "bolsas de cemento y " + bolsaDeCal + " bolsas de cal")
+    alert("se necesitan: " + bolsaCemento + " bolsas de cemento y " + bolsaDeCal + " bolsas de cal")
+    
 
 
 

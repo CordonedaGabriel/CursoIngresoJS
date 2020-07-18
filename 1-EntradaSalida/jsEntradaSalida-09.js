@@ -13,13 +13,4 @@ function mostrarAumento()
 	aumento = sueldo * 10 / 100;
 	resultado = sueldo + aumento;
 	txtIdResultado.value  = resultado;
-	
-
-
-
-
-	
-
-
-
 }
