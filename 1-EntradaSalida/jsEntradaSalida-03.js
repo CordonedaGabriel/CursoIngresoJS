@@ -7,7 +7,9 @@ function mostrar()
 	
 	nombre = txtIdNombre.value 
 	alert(nombre);
-
+	
+	//hola compu nueva
+	
 
 
 
