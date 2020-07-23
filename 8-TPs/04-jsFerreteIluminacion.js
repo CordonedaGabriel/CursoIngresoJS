@@ -9,6 +9,146 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 
  */
 function CalcularPrecio () 
+/*{
+     var lamparitas;
+     var precio;
+     var precioConDescuento;
+     var marca;
+     var precioFinal;
+     var ingresosBrutos;
+
+     lamparitas = txtIdCantidad.value;
+     lamparitas = parseInt(lamparitas);
+     precio = 35;
+     marca = Marca.value
+     precioFinal = 
+     ingresosBrutos = precioFinal * 10 / 100
+
+     if(lamparitas >= 6) {
+        precioConDescuento= (lamparitas * precio) * 50 / 100
+     } else {
+         if(lamparitas == 5 && marca == "ArgentinaLuz")  {
+             precioConDescuento = (lamparitas * precio) * 40 / 100
+         } else {
+            if(lamparitas == 5 && marca != "ArgentinaLuz") {
+                precioConDescuento = (lamparitas * precio) * 30 / 100
+            } else {
+                if(lamparitas == 4 && marca == "ArgentinaLuz" || marca == "FelipeLamparas"){
+                    precioConDescuento = (lamparitas * precio) * 25 / 100
+                } else {
+                    if(lamparitas == 4 && marca != "ArgentinaLuz" || marca != "FelipeLamparas"){
+                        precioConDescuento = (lamparitas * precio) * 20 / 100
+                    } else {
+                        if(lamparitas == 3 && marca == "ArgentinaLuz"){
+                            precioConDescuento = (lamparitas * precio) * 15 / 100
+                        } else {
+                            if(lamparitas == 3 && marca == "FelipeLamparas"){
+                                precioConDescuento = (lamparitas * precio) * 10 / 100
+                            } else {
+                                if(lamparitas == 3 && marca != "ArgentinaLuz" || marca != "FelipeLamparas"){
+                                    precioConDescuento = (lamparitas * precio) * 5 / 100
+                                } else {
+                                    if(precioConDescuento > 120){
+        precioConDescuento = precioConDescuento + ingresosBrutos;{
+        alert("usted pagó " + ingresosBrutos + " de ingresos brutos");
+    } precioConDescuento = txtIdprecioDescuento;
+
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+         }
+     }
+        
+     
+         
+     
+     
+}
+*/
 {
- 	
+    var lamparitas;
+    var precio;
+    var precioConDescuento;
+    var marca;
+    var ingresosBrutos;
+
+    lamparitas = txtIdCantidad.value;
+    lamparitas = parseInt(lamparitas);
+    precio = 35;
+    marca = Marca.value;
+    
+    
+    if(lamparitas >= 6){
+        precioConDescuento = (lamparitas * precio) * 50 / 100;
+    } else if(lamparitas == 5 && marca == "ArgentinaLuz"){
+        precioConDescuento = (lamparitas * precio) * 40 / 100;
+    } else if(lamparitas == 5 && marca != "ArgentinaLuz"){
+        precioConDescuento = (lamparitas * precio) * 30 / 100;
+    } else if(lamparitas == 4 && marca == "ArgentinaLuz" || marca == "FelipeLamparas"){
+        precioConDescuento = (lamparitas * precio) * 25 / 100;
+    } else if(lamparitas == 4 && marca != "ArgentinaLuz" || marca != "FelipeLamparas"){
+        precioConDescuento = (lamparitas * precio) * 20 / 100;
+    } else if(lamparitas == 3 && marca == "ArgentinaLuz"){
+        precioConDescuento = (lamparitas * precio) * 15 / 100;
+    } else if(lamparitas == 3 && marca == "FelipeLamparas"){
+        precioConDescuento = (lamparitas * precio) * 10 / 100;
+    } else if(lamparitas == 3 && marca != "ArgentinaLuz" || marca != "FelipeLamparas"){
+        precioConDescuento = (lamparitas * precio) * 5 / 100;
+    } 
+    ingresosBrutos = precioConDescuento * 10 / 100
+    if(precioConDescuento > 120){
+        precioConDescuento = precioConDescuento + ingresosBrutos;{
+        alert("usted pagó " + ingresosBrutos + " de ingresos brutos");
+    } 
+    {
+        precioConDescuento = txtIdprecioDescuento.value; 
+    }
+    
+}
+
+
+//COMPLETAR Y PREGUNTAR EL SABADO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
