@@ -69,6 +69,7 @@ function CalcularPrecio ()
      
 }
 */
+
 {
     var lamparitas;
     var precio;
@@ -80,6 +81,7 @@ function CalcularPrecio ()
     lamparitas = parseInt(lamparitas);
     precio = 35;
     marca = Marca.value;
+    precioConDescuento = parseInt(precioConDescuento);
     
     
     if(lamparitas >= 6){
@@ -99,21 +101,81 @@ function CalcularPrecio ()
     } else if(lamparitas == 3 && marca != "ArgentinaLuz" || marca != "FelipeLamparas"){
         precioConDescuento = (lamparitas * precio) * 5 / 100;
     } 
-    ingresosBrutos = precioConDescuento * 10 / 100
-    if(precioConDescuento > 120){
-        precioConDescuento = precioConDescuento + ingresosBrutos;{
-        alert("usted pagó " + ingresosBrutos + " de ingresos brutos");
-    } 
-    {
-        precioConDescuento = txtIdprecioDescuento.value; 
-    }
     
-}
 
 
 //COMPLETAR Y PREGUNTAR EL SABADO
 
+/*
+EJERCICIO DE JULIETA
+{
+	var precioLampara;
+	precioLampara = 35;
+	var cantidadDeLamparasCompradas;
+	cantidadDeLamparasCompradas = parseInt(txtIdCantidad.value);
+	var marcaLampara;
+	marcaLampara = Marca.value;
+	var subTotal;
+	subTotal = cantidadDeLamparasCompradas * precioLampara;
+	var precioConDescuento;
+	precioConDescuento = subTotal;
+	txtIdPrecioDescuento.value = precioConDescuento;
+	var iibb;
+	var precioTotal;
 
+
+	if (cantidadDeLamparasCompradas>=6) {
+		precioConDescuento = subTotal * 0.50;
+	} else {
+		if (cantidadDeLamparasCompradas===5) {
+			switch(marcaLampara) {
+				case "ArgentinaLuz":
+					precioConDescuento = subTotal * 0.60;
+					break;
+				default:
+					precioConDescuento = subTotal * 0.70;
+					break;
+			}
+		} else {
+			if (cantidadDeLamparasCompradas===4) {
+				switch (marcaLampara) {
+					case "ArgentinaLuz":
+					case "FelipeLamparas":
+						precioConDescuento = subTotal * 0.75;
+						break;
+					default:
+					 	precioConDescuento = subTotal * 0.80;
+					 	break;
+				}
+			} else {
+				if (cantidadDeLamparasCompradas===3) {
+					switch (marcaLampara) {
+						case "ArgentinaLuz":
+							precioConDescuento = subTotal * 0.85;
+							break;
+						case "FelipeLamparas":
+							precioConDescuento = subTotal * 0.90;
+							break;
+						default:
+							precioConDescuento = subTotal * 0.95;
+							break;
+					}
+				}
+ 			}
+		}
+	}
+
+	//tema IIBB
+	if (precioConDescuento>=120) {
+		iibb = precioConDescuento * 0.10;
+		alert("Usted pago " + iibb + " de IIBB.")
+	} else {
+		iibb = 0;
+	}
+
+	precioTotal = precioConDescuento + iibb;
+	txtIdPrecioDescuento.value = precioTotal;
+*/
 
 
 
