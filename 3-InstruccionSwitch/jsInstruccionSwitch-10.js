@@ -12,7 +12,8 @@ function mostrar()
 				default:
 					alert("no se viaja");
 					break;
-			}switch(estacionIngresada){
+			}
+		}switch(estacionIngresada){
 				case "Verano":
 					switch (destinoIngresado){
 						case "Mar del plata":
@@ -22,7 +23,8 @@ function mostrar()
 						default:
 							alert("no se viaja");
 							break;
-					}switch(estacionIngresada){
+					}
+				}switch(estacionIngresada){
 						case "Otoño":
 							switch(destinoIngresado){
 								case "Bariloche":
@@ -31,7 +33,8 @@ function mostrar()
 								case "Cataratas":
 									alert("se viaja");
 									break;
-							}switch(estacionIngresada){
+							}
+						}switch(estacionIngresada){
 								case "Primavera":
 									switch(destinoIngresado){
 										case "Bariloche":
@@ -41,9 +44,9 @@ function mostrar()
 											alert("se viaja");
 											break;
 									}
-							}
-					}
-			}
-	}
+								}
+					
+			
+	
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN // tener cuidado con las llaves
