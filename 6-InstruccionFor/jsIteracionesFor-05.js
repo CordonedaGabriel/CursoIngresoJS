@@ -1,6 +1,13 @@
 function mostrar()
 {
-	alert("ok");
+	for(;;){
+		var numero;
+		numero=prompt("ingrese numero");
+
+		if(numero==9){
+			break;
+		}
+	}
 
 
 
